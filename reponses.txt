@@ -5,3 +5,7 @@ DASI2
 Partie 2:
 1.4:
 -Si le password est composé uniquement de z, le cas n'est pas géré. Il faudrait alors rajouter un caractère "a" en début de chaine et passer tout le reste de la chaine à "a".
+
+2.3:
+-Il y a 26^N possibilité. Soit dans notre cas 26^5 soit 11.811.376
+

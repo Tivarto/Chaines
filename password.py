@@ -1,4 +1,4 @@
-# coding: utf-8 
+# coding: utf-8
 def getNext(password):
     """
     Série de tests exprimés en doctest
@@ -13,6 +13,9 @@ def getNext(password):
     #1 pwd contient tous les caractères de la variable password sous forme d'une liste.
     found = False
     i=len(pwd)-1
+
+    if(password == 'zzzzz'):
+        raise ValueError('Pas de mot de passe suivant pour zzzzz')
 
     while not found:
         if pwd[i] < 'z':
