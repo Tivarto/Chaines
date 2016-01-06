@@ -9,3 +9,4 @@ Partie 2:
 2.3:
 -Il y a 26^N possibilité. Soit dans notre cas 26^5 soit 11.811.376
 
+aabcc
