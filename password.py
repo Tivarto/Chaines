@@ -31,6 +31,39 @@ def getNext(password):
     return ''.join(pwd)
     #3 On reconstruit une chaine de caractère en utilisant les lettres contenues dans le tableau pwd.
 
+def hasSeries(password):
+
+    pwd = list(password)
+    i=0
+    for i in range (0,len(pwd)-2):
+        if(ord(pwd[i])+1==ord(pwd[i+1])):
+            if(ord(pwd[i+1])+1==ord(pwd[i+2])):
+                return True
+    return False
+
+def hasNoBadChar(password):
+    pwd = list(password)
+    i=0
+    for i in range (0,len(pwd)):
+        if(pwd[i] == 'i' or pwd[i] == 'l' or pwd[i] == 'o'):
+            return False
+    return True
+
+def hasTwoPair(password):
+    pwd = list(password)
+    i=0
+    pairnumber=0
+    for i in range (0,len(pwd)-1):
+        if(i+2<len(pwd)):
+            if(ord(pwd[i])==ord(pwd[i+1]) and ord(pwd[i])!=ord(pwd[i+2])):
+                pairnumber+=1
+        elif(i+1<len(pwd)):
+            if(ord(pwd[i])==ord(pwd[i+1])):
+                pairnumber+=1
+    if(pairnumber>1):
+        return True
+    else:
+        return False
 
 
 # Grâce à ce fragment de code, si vous exécutez ce fichier, les tests doctests seront exécutés également. 

@@ -48,19 +48,19 @@ class TestPassword(unittest.TestCase):
 
 
     def test_hasTwoPair1(self):
-        self.assertEqual(pwd.hasNoBadChar("aazee"), True)
+        self.assertEqual(pwd.hasTwoPair("aazee"), True)
 
     def test_hasTwoPair2(self):
-        self.assertEqual(pwd.hasNoBadChar("aaeez"), True)
+        self.assertEqual(pwd.hasTwoPair("aaeez"), True)
 
     def test_hasTwoPair3(self):
-        self.assertEqual(pwd.hasNoBadChar("aaeee"), True)
+        self.assertEqual(pwd.hasTwoPair("aaeee"), True)
 
     def test_hasTwoPair4(self):
-        self.assertEqual(pwd.hasNoBadChar("aaaze"), False)
+        self.assertEqual(pwd.hasTwoPair("aaaze"), False)
 
     def test_hasTwoPair5(self):
-        self.assertEqual(pwd.hasNoBadChar("aazed"), False)
+        self.assertEqual(pwd.hasTwoPair("aazed"), False)
 
 
 
