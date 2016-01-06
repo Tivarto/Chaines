@@ -1,3 +1,7 @@
 Robin SAVARY-SIMONET
 Anthony FRUGIER
 DASI2
+
+Partie 2:
+1.4:
+-Si le password est composé uniquement de z, le cas n'est pas géré. Il faudrait alors rajouter un caractère "a" en début de chaine et passer tout le reste de la chaine à "a".
